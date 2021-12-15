@@ -22,7 +22,8 @@ No warranty at all, although it is so simple that should not break anything.
 wget https://ftp.science.ru.nl/Molden/molden6.9.tar.gz --no-check-certificate
 tar -xzf molden6.9.tar.gz
 cd molden6.9
-curl https://raw.githubusercontent.com/boneta/molden-noskull-patch/main/noskull.diff | patch src/xwin.c
+curl https://raw.githubusercontent.com/boneta/molden-noskull-patch/master/noskull.diff | patch src/xwin.c
 make
 ./bin/molden
+
 ```
