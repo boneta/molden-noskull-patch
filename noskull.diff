@@ -1,0 +1,19 @@
+--- xwin.c	        2021-12-15 11:25:42.065993686 +0100
++++ xwin-noskull.c	2021-12-15 11:27:50.232039523 +0100
+@@ -26558,8 +26558,14 @@
+ 		        qboxup = 0;
+ 		    } else if (client_event->window == winMC ||
+ 				client_event->window == win) {
+-			if (DoCan(width/2, height/2,
+-				"Use the Skull Icon to quit Molden",0)) {}
++			if (!DoCan(width/2, height/2,
++				"F**k the Skull! Are you sure to quit?", 1)) {
++					FreeAll(1);
++						XFreeGC(display,gc);
++						XCloseDisplay(display);
++						*inct = 15;
++						exit(0);
++				}
+ 		    }
+ 		}
+ 	   }
