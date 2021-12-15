@@ -2,6 +2,8 @@
 
 Simple and dirty patch for [Molden](https://www.theochem.ru.nl/molden/), the ancient chemical/molecular viewer. Allows to close Molden without the need to click the annoying *Skull Icon*.
 
+![Molden Closing](./closing.gif)
+
 Tested on Molden 6.9 & gcc 9.3 @ a Linux machine.  
 No warranty at all, although it is so simple that should not break anything.
 
