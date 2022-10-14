@@ -1,10 +1,10 @@
-# No-Skull Patch for Molden
+# No-Skull Patch for Molden 💀🛇
 
-Simple and dirty patch for [Molden](https://www.theochem.ru.nl/molden/), the ancient chemical/molecular viewer. Allows to close Molden without the need to click the annoying *Skull Icon*.
+Simple and dirty patch for [Molden](https://www.theochem.ru.nl/molden/), the ancient chemical/molecular viewer. Allows to close Molden without the need to click the annoying *Skull Icon*. Works for both the *control panel* and *main window*.
 
 ![Molden Closing](./closing.gif)
 
-Tested on Molden 7.1 & gcc 9.4 in a Linux machine.  
+Tested on Molden 7.1 and gcc/gfortran 9.4 & 11.2 on a Linux machine.  
 No warranty at all, although it is so simple that it should not break anything.
 
 
@@ -15,8 +15,11 @@ No warranty at all, although it is so simple that it should not break anything.
 4. Run Molden
 5. Close Molden without the skull icon!!!
 
+#### Note
+If your gfortran compiler is 10 or higher, you may need to add `-fallow-argument-mismatch` to the `FFLAGS` in the `makefile` before the compilation. This is an issue of *molden* itself, independent of the patch.
 
-## Full compilation example
+
+## Full and quick compilation example
 ```
 wget https://ftp.science.ru.nl/Molden/molden7.1.tar.gz --no-check-certificate
 tar -xzf molden7.1.tar.gz
