@@ -16,12 +16,12 @@ No warranty at all, although it is so simple that it should not break anything.
 5. Close Molden without the skull icon!!!
 
 #### Note
-If your gfortran compiler is 10 or higher, you may need to add `-fallow-argument-mismatch` to the `FFLAGS` in the `makefile` before the compilation. This is an issue of *molden* itself, independent of the patch.
+If your gfortran compiler is 10 or higher, you may need to add `-fallow-argument-mismatch` to the `FFLAGS` in the `makefile` before the compilation. This is an issue of *molden* itself and independent of the patch.
 
 
 ## Full and quick compilation example
 ```
-wget https://ftp.science.ru.nl/Molden/molden7.1.tar.gz --no-check-certificate
+wget https://ftp.science.ru.nl/Molden/molden7.1.tar.gz
 tar -xzf molden7.1.tar.gz
 cd molden7.1
 curl https://raw.githubusercontent.com/boneta/molden-noskull-patch/master/noskull.diff | patch src/xwin.c
