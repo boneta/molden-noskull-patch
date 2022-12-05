@@ -4,7 +4,7 @@ Simple and dirty patch for [Molden](https://www.theochem.ru.nl/molden/), the anc
 
 ![Molden Closing](./closing.gif)
 
-Tested on Molden 7.1 and gcc/gfortran 9.4 & 11.2 on a Linux machine.  
+Tested on Molden 7.2 and gcc/gfortran 8.5/9.4/11.2 on a Linux machine.  
 No warranty at all, although it is so simple that it should not break anything.
 
 
@@ -21,9 +21,9 @@ If your gfortran compiler is 10 or higher, you may need to add `-fallow-argument
 
 ## Full and quick compilation example
 ```
-wget https://ftp.science.ru.nl/Molden/molden7.1.tar.gz
-tar -xzf molden7.1.tar.gz
-cd molden7.1
+wget https://ftp.science.ru.nl/Molden/molden7.2.tar.gz
+tar -xzf molden7.2.tar.gz
+cd molden7.2
 curl https://raw.githubusercontent.com/boneta/molden-noskull-patch/master/noskull.diff | patch src/xwin.c
 make
 ./bin/molden
